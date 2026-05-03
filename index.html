@@ -90,11 +90,11 @@
 
   <main>
     <section>
-      <h2>① 自分のブランチに変更を反映させる方法</h2>
+      <h2>① 自分のブランチでの変更を自分のブランチへ反映させる方法</h2>
       <ol>
-        <li>GitHub Desktopで自分のブランチに切り替えて、Unityで編集する。</li>
+        <li>GitHub Desktopで自分のブランチに切り替えて、Unityで編集する．</li>
         <li>GitHub Desktopで、自分のブランチの状態でコミットする。</li>
-        <li>そのまま <strong>Push origin</strong> を押す。</li>
+        <li>そのまま <strong>Push origin</strong> <strong>Fetch origin</strong>でも良いのかも。</li>
       </ol>
     </section>
 
@@ -102,8 +102,9 @@
       <h2>② 自分のブランチの変更をmainブランチに反映させる方法</h2>
       <ol>
         <li>GitHub Desktopで、自分のブランチにいる状態で <strong>Fetch origin</strong> を押す。</li>
-        <li>青色のボタン <strong>Create pull request</strong> が出てくるので押す。</li>
-        <li>GitHubのブラウザ画面が開く。</li>
+        <li>青色のボタン <strong>Create pull request</strong> が出てくるので押す。<strong>Create pull request</strong>が出てこない場合は，<strong>View stush</strong>を押下した後，<strong>Restore</strong>
+        を押したら出てくると思われる．</li>
+        <li>そしたらGitHubのブラウザ画面が開く。</li>
         <li><strong>Pull Request</strong> のボタンが出てくるので、コメントを書いてから押す。</li>
         <li>マージ先が <strong>main</strong> になっていることを確認してから、<strong>merge</strong> を押す。</li>
       </ol>
@@ -111,7 +112,7 @@
       <div class="note">
         <strong>補足：</strong><br />
         mainへの変更を自分で確認する場合、GitHub Desktopでブランチをmainに切り替えてからUnityを開くと確認できるはずです。
-        うまくいかない場合は、GitHub Desktopでmainにいる状態でPushやFetchを押したり、Unityを開き直したりすると良いかもしれません。
+        うまくいかない場合は、GitHub Desktopでmainにいる状態でPushやFetchを押したり、Unityを開き直したりすると良いかもしれないけどまだ試してないからわからなーい。
       </div>
     </section>
 
@@ -135,8 +136,8 @@
       <div class="flow">
         <ul>
           <li>自分がUnityで作業したい場合は、① → ② の順番で作業する。</li>
-          <li>その後、Slackで「マージしてください」と一言送る。</li>
-          <li>誰かが「マージしてください」と言った場合は、③を実施する。</li>
+          <li>その後、Slackでこーしろーがやっていたように「〜のでマージしてください」と一言送る。</li>
+          <li>一行の誰かが「マージしてください」と言った場合は、③を実施する。</li>
         </ul>
       </div>
     </section>
@@ -144,10 +145,10 @@
     <section>
       <h2>注意事項</h2>
       <div class="warning">
-        絶対にmainブランチで作業しないこと。必ずブランチを切ってから作業すること。
+        絶対にmainブランチで作業しないこと．必ずブランチを切ってから作業すること．これマジで注意．
       </div>
       <ul>
-        <li>担当する面やオブジェクトだけを触る。</li>
+        <li>担当する面やオブジェクトだけを触るようにしよう．必ず．絶対．</li>
         <li>他の人が編集したものや触っていそうなオブジェクトを触りたい場合は、事前に一言伝える。</li>
         <li>同じオブジェクトを複数人で編集すると、コリジョンが発生する可能性がある。</li>
       </ul>
