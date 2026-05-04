@@ -104,9 +104,10 @@
         <li>GitHub Desktopで、自分のブランチにいる状態で <strong>Fetch origin</strong> を押す。</li>
         <li>青色のボタン <strong>Create pull request</strong> が出てくるので押す。<strong>Create pull request</strong>が出てこない場合は，<strong>View stush</strong>を押下した後，<strong>Restore</strong>
         を押したら出てくると思われる．</li>
+        <li>一回stushやったとき変なふうになったからあんまりこの作業やらん方がいいかも</li>
         <li>そしたらGitHubのブラウザ画面が開く。</li>
         <li><strong>Pull Request</strong> のボタンが出てくるので、コメントを書いてから押す。</li>
-        <li>マージ先が <strong>main</strong> になっていることを確認してから、<strong>merge</strong> を押す。</li>
+        <li>マージ先が <strong>main</strong> になっていることを確認してから、<strong>Merge Pull Request</strong> を押す。</li>
       </ol>
 
       <div class="note">
@@ -128,6 +129,13 @@
         <strong>補足：</strong><br />
         編集中でmainにマージしていない自分のブランチに対してこの作業をしても、mainの内容と編集中の内容が統合されるため、基本的に情報が失われることはありません。
         ただし、mainと自分のブランチで同じオブジェクトを触っていると、コリジョンが発生する可能性があります。
+      </div>
+
+      <div class="note">
+        <strong>補足：</strong><br />
+        mainからその子への反映は上記のようにUpdate from mainで良い．mainの子をmainの子の子に反映したい場合は，mainの子の子にブランチを切り替えた後，
+        メニューの <strong>Branch</strong> → <strong>Merge into current branch</strong> を押下し，mainの子を選択する．これでOK．他も
+        同じようにやる
       </div>
     </section>
 
